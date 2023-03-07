@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    animation: animate 5s infinite;
+}
+ @keyframes animate{
+    0%{
+        filter: hue-rotate(45deg);
+    }
+    100%{
+        filter: hue-rotate(45deg);
+    }
+ }
+.logo{
+    width: 500px;
+    height: 500px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
