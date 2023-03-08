@@ -1,32 +1,114 @@
-*{
+*
+{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.banner{
     width: 100%;
-    min-height: 100vh;
-    background: black;
-    animation: animate 5s infinite;
-}
- @keyframes animate{
-    0%{
-        filter: hue-rotate(45deg);
-    }
-    100%{
-        filter: hue-rotate(45deg);
-    }
- }
-.logo{
-    width: 500px;
-    height: 500px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
 
-.logo img{
+.slider{
+    width: 50%;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+}
+
+#slideimg{
     width: 100%;
     height: 100%;
 }
+.overlay{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0.7),rgba(0,0,0.7));
+    position: absolute;
+    top: 0;
+}
+.navbar{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin: 35px auto;
+}
+
+.logo{
+    flex-basis: 15%;
+}
+
+.logo img{
+    width: 120px;
+    cursor: pointer;
+}
+
+h1{
+    background-color: rgb(2, 89, 110);
+    height: 100px;
+    margin: 0px;
+    font-size: 70px;
+    font-style: oblique;
+    display: flex;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    align-content: first baseline;
+    background-color: rgb(3, 63, 92);
+    border-style: solid;
+    border-width: 3px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-color: rgb(6, 92, 92);
+    border-radius: 30px;
+    border-radius: 0px;
+}
+
+.sidebar{
+    background-color: rgb(2, 89, 110);
+    width: 800px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    position: relative;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.items{
+    background-color: rgba(13, 146, 163, 0.007);
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+}
+
+.MeandI{
+    display:block;
+    margin-right: auto;
+    border-radius: 50%;  
+    background-color: aquamarine;  
+    position: relative;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+    padding-left: 2%;
+
+}
+
+h3{
+    color:rgb(10, 2, 80);
+    padding-left: 2%;
+}
+
+div h3{
+    color:rgb(5, 10, 85);
+    
